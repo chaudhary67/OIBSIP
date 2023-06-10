@@ -1,0 +1,81 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000000;
+    text-align: center;
+}
+.Main
+{
+    background-color:#00ffff ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px ;
+    margin: 10px;
+}
+.Box
+{
+    display: flex;
+}
+.Box *
+{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+button , .Box *
+{
+    border: 5px;
+}
+.Box *:focus
+{
+    outline: none;   
+}
+button
+{
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#808080;
+    color:#193948;
+    width: 50%;
+}
+button:hover
+{
+    cursor: pointer;
+}
+p
+{
+    padding: 10px 20px;
+    border: 4px solid #193948;
+    margin: 10px;
+    border-radius: 10PX;
+}
+
+
+@media (max-width:450px)
+{
+    .Box
+    {
+        flex-direction: column;
+    }
+    .Main
+    {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+    }
+    p
+    {
+        padding: 10px;
+    }
+}
